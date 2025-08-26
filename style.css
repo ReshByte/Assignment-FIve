@@ -51,37 +51,3 @@
 
 
 
-@media screen and (min-width: 480px){
-
-
-    .header{
-        flex-direction: column;
-    }
-
-    .logo-container{
-    
-        margin: auto;
-    }
-
-    .header-content{
-        margin-top: 30px;
-        margin-bottom: 20px;
-    }
-
-.card-list{
-    grid-template-columns: repeat(1,1fr);
-}
-
-.title-container{
-    padding-top: 10px;
-    font-size: 18px;
-}
-
-.description-container{
-    padding-top: 10px;
-    font-size: 12px;
-}
-
-
-
-} 
