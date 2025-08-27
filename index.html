@@ -58,7 +58,7 @@
             
             <div class="pl-[32px]">
                 <button class="grey-btn text-[#5C5C5C] border border-gray-[#5C5C5C] cursor-pointer rounded-[8px] py-[10px] px-[35px] max-sm:mr-[12px]"><i class="fa-regular fa-copy"></i>Copy</button>
-                <button class="green-btn bg-[#00A63E]   rounded-[8px] text-[#ffffff] cursor-pointer py-[10px] px-[40px]"><i class="fa-solid fa-phone text-white"></i>Call</button>
+                <button id="national-emergency" class="national-emergency green-btn bg-[#00A63E]   rounded-[8px] text-[#ffffff] cursor-pointer py-[10px] px-[40px]"><i class="fa-solid fa-phone text-white"></i>Call</button>
             </div>
        </div>
          <div class="h-[360px] shadow-lg bg-[white] rounded-[12px]">
@@ -80,7 +80,7 @@
             
             <div class="pl-[32px]">
                 <button class="grey-btn cursor-pointer text-[#5C5C5C] border border-gray-[#5C5C5C] rounded-[8px] py-[10px] px-[35px] max-sm:mr-[12px]"><i class="fa-regular fa-copy"></i>Copy</button>
-                <button class="green-btn cursor-pointer bg-[#00A63E]   rounded-[8px] text-[#ffffff] py-[10px] px-[40px]"><i class="fa-solid fa-phone text-white"></i>Call</button>
+                <button id="police-helpline" class="green-btn cursor-pointer bg-[#00A63E]   rounded-[8px] text-[#ffffff] py-[10px] px-[40px]"><i class="fa-solid fa-phone text-white"></i>Call</button>
             </div>
        </div>
           <div class="h-[360px] shadow-lg bg-[white] rounded-[12px]">
@@ -102,15 +102,22 @@
             
             <div class="pl-[32px]">
                 <button class="grey-btn cursor-pointer text-[#5C5C5C] border border-gray-[#5C5C5C] rounded-[8px] py-[10px] px-[35px] max-sm:mr-[12px]"><i class="fa-regular fa-copy"></i>Copy</button>
-                <button class="green-btn cursor-pointer bg-[#00A63E]   rounded-[8px] text-[#ffffff] py-[10px] px-[40px]"><i class="fa-solid fa-phone text-white"></i>Call</button>
+                <button id="fire-down" class="green-btn cursor-pointer bg-[#00A63E]   rounded-[8px] text-[#ffffff] py-[10px] px-[40px]"><i class="fa-solid fa-phone text-white"></i>Call</button>
             </div>
        </div>
        <!-- Row Span -->
-         <div class="row-span grid row-span-3 shadow-lg bg-[white] rounded-[12px]  max-sm:hidden">
-           <div class="flex justify-between items-center h-[50px] p-[32px]">
+         <div class="row-span row-span-3 shadow-lg bg-[white] rounded-[12px] pt-[0px] max-sm:hidden">
+           <div class="flex justify-between items-center  h-[65px] px-[18px] py-[18px] ">
             <p class="roboto-font font-medium text-[20px] text-[#111111]"><i class="fa-regular fa-clock"></i>Call History</p>
-            <button class="inter-font cursor-pointer font-semibold text-[16px] green-btn px-5 pt-[9px] pb-[10px] bg-[#00A63E] rounded-[50px]  text-[#ffffff]">Clear</button>
+            <button class="inter-font cursor-pointer font-semibold text-[16px] green-btn px-[15px] py-[5px] bg-[#00A63E] rounded-[50px]  text-[#ffffff]">Clear</button>
            </div>
+          
+           <div id="call-history">
+
+           </div>
+
+          
+          
        </div>
        <!-- Row span -->
          <div class="h-[360px] shadow-lg bg-[white] rounded-[12px]">
@@ -132,7 +139,7 @@
             
             <div class="pl-[32px]">
                 <button class="grey-btn cursor-pointer text-[#5C5C5C] border border-gray-[#5C5C5C] rounded-[8px] py-[10px] px-[35px] max-sm:mr-[12px]"><i class="fa-regular fa-copy"></i>Copy</button>
-                <button class="green-btn cursor-pointer bg-[#00A63E]   rounded-[8px] text-[#ffffff] py-[10px] px-[40px]"><i class="fa-solid fa-phone text-white"></i>Call</button>
+                <button id="ambulance" class="green-btn cursor-pointer bg-[#00A63E]   rounded-[8px] text-[#ffffff] py-[10px] px-[40px]"><i class="fa-solid fa-phone text-white"></i>Call</button>
             </div>
        </div>
          <div class="h-[360px] shadow-lg bg-[white] rounded-[12px]">
@@ -154,7 +161,7 @@
             
             <div class="pl-[32px]">
                 <button class="grey-btn cursor-pointer text-[#5C5C5C] border border-gray-[#5C5C5C] rounded-[8px] py-[10px] px-[35px] max-sm:mr-[12px]"><i class="fa-regular fa-copy"></i>Copy</button>
-                <button class="green-btn cursor-pointer bg-[#00A63E]   rounded-[8px] text-[#ffffff] py-[10px] px-[40px]"><i class="fa-solid fa-phone text-white"></i>Call</button>
+                <button id="women-child" class="green-btn cursor-pointer bg-[#00A63E]   rounded-[8px] text-[#ffffff] py-[10px] px-[40px]"><i class="fa-solid fa-phone text-white"></i>Call</button>
             </div>
        </div>
          <div class="h-[360px] shadow-lg bg-[white] rounded-[12px]">
@@ -176,7 +183,7 @@
             
             <div class="pl-[32px]">
                 <button class="grey-btn cursor-pointer text-[#5C5C5C] border border-gray-[#5C5C5C] rounded-[8px] py-[10px] px-[35px] max-sm:mr-[12px]"><i class="fa-regular fa-copy"></i>Copy</button>
-                <button class="green-btn cursor-pointer bg-[#00A63E]   rounded-[8px] text-[#ffffff] py-[10px] px-[40px]"><i class="fa-solid fa-phone text-white"></i>Call</button>
+                <button id="anti-corruption" class="green-btn cursor-pointer bg-[#00A63E]   rounded-[8px] text-[#ffffff] py-[10px] px-[40px]"><i class="fa-solid fa-phone text-white"></i>Call</button>
             </div>
        </div>
          <div class="h-[360px] shadow-lg bg-[white] rounded-[12px]">
@@ -198,7 +205,7 @@
             
             <div class="pl-[32px]">
                 <button class="grey-btn cursor-pointer text-[#5C5C5C] border border-gray-[#5C5C5C] rounded-[8px] py-[10px] px-[35px] max-sm:mr-[12px]"><i class="fa-regular fa-copy"></i>Copy</button>
-                <button class="green-btn cursor-pointer bg-[#00A63E]   rounded-[8px] text-[#ffffff] py-[10px] px-[40px]"><i class="fa-solid fa-phone text-white"></i>Call</button>
+                <button id="electricity" class="green-btn cursor-pointer bg-[#00A63E]   rounded-[8px] text-[#ffffff] py-[10px] px-[40px]"><i class="fa-solid fa-phone text-white"></i>Call</button>
             </div>
        </div>
         <div class="h-[360px] shadow-lg bg-[white] rounded-[12px]">
@@ -220,7 +227,7 @@
             
             <div class="pl-[32px]">
                 <button class="grey-btn cursor-pointer text-[#5C5C5C] border border-gray-[#5C5C5C] rounded-[8px] py-[10px] px-[35px] max-sm:mr-[12px]"><i class="fa-regular fa-copy"></i>Copy</button>
-                <button class="green-btn cursor-pointer bg-[#00A63E]   rounded-[8px] text-[#ffffff] py-[10px] px-[40px]"><i class="fa-solid fa-phone text-white"></i>Call</button>
+                <button id="brac-helpline" class="green-btn cursor-pointer bg-[#00A63E]   rounded-[8px] text-[#ffffff] py-[10px] px-[40px]"><i class="fa-solid fa-phone text-white"></i>Call</button>
             </div>
        </div>
          <div class="h-[360px] shadow-lg bg-[white] rounded-[12px]">
@@ -242,7 +249,7 @@
             
             <div class="pl-[32px]">
                 <button class="grey-btn cursor-pointer text-[#5C5C5C] border border-gray-[#5C5C5C] rounded-[8px] py-[10px] px-[35px] max-sm:mr-[12px]"><i class="fa-regular fa-copy"></i>Copy</button>
-                <button class="green-btn cursor-pointer bg-[#00A63E]   rounded-[8px] text-[#ffffff] py-[10px] px-[40px]"><i class="fa-solid fa-phone text-white"></i>Call</button>
+                <button id="bd-railway" class="green-btn cursor-pointer bg-[#00A63E]   rounded-[8px] text-[#ffffff] py-[10px] px-[40px]"><i class="fa-solid fa-phone text-white"></i>Call</button>
             </div>
        </div>
 
