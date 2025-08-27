@@ -21,7 +21,7 @@ const greyButton = document.getElementsByClassName("grey-btn");
 let copyCount = 0;
 
 for (const btn of greyButton) {
-  btn.addEventListener("click", (e) => {
+  btn.addEventListener("click", function(e) {
    const cardCopy = btn.parentNode.parentNode;
     const element = cardCopy.getElementsByClassName("number-copy")[0];
     const copyNumber = element.innerText;
@@ -37,9 +37,22 @@ for (const btn of greyButton) {
 
 
 
+//Clear Button
+
+document.getElementById('clear-btn')
+.addEventListener('click',function(e){
+  // e.preventDefault()
+  document.getElementById('call-history').innerText = ""
+  
+})
+
+
 //Calling...
 
 const savedData = [];
+let coin = 100;
+
+
 
 
 document.getElementById('national-emergency')
@@ -55,6 +68,16 @@ const data = {
 }
 
 savedData.push(data)
+
+
+  if(coin > 0){
+    alert( '📞 Calling '+data.name+" "+data.phone+'...')
+    coin = coin-20;
+  }
+  else{
+    alert('❌ You don’t have enough coins! At least 20 coins are required to make a call.')
+  }
+   document.getElementById('call-coin').innerText = coin
 
 const callHistory =  document.getElementById('call-history');
 callHistory.innerText = ""
@@ -95,6 +118,15 @@ const data = {
 
 savedData.push(data)
 
+if(coin > 0){
+    alert( '📞 Calling '+data.name+" "+data.phone+'...')
+    coin = coin-20;
+  }
+  else{
+    alert('❌ You don’t have enough coins! At least 20 coins are required to make a call.')
+  }
+   document.getElementById('call-coin').innerText = coin
+
 const callHistory =  document.getElementById('call-history');
 callHistory.innerText = ""
 
@@ -134,6 +166,15 @@ const data = {
 
 savedData.push(data)
 
+if(coin > 0){
+    alert( '📞 Calling '+data.name+" "+data.phone+'...')
+    coin = coin-20;
+  }
+  else{
+    alert('❌ You don’t have enough coins! At least 20 coins are required to make a call.')
+  }
+   document.getElementById('call-coin').innerText = coin
+
 const callHistory =  document.getElementById('call-history');
 callHistory.innerText = ""
 
@@ -167,11 +208,20 @@ document.getElementById('ambulance')
 
 const data = {
   name: 'Ambulance Service',
-  phone: 1994-999999,
+  phone: '1994-999999',
   date: new Date().toLocaleTimeString()
 }
 
 savedData.push(data)
+
+if(coin > 0){
+    alert( '📞 Calling '+data.name+" "+data.phone+'...')
+    coin = coin-20;
+  }
+  else{
+    alert('❌ You don’t have enough coins! At least 20 coins are required to make a call.')
+  }
+   document.getElementById('call-coin').innerText = coin
 
 const callHistory =  document.getElementById('call-history');
 callHistory.innerText = ""
@@ -211,6 +261,15 @@ const data = {
 
 savedData.push(data)
 
+if(coin > 0){
+    alert( '📞 Calling '+data.name+" "+data.phone+'...')
+    coin = coin-20;
+  }
+  else{
+    alert('❌ You don’t have enough coins! At least 20 coins are required to make a call.')
+  }
+   document.getElementById('call-coin').innerText = coin
+
 const callHistory =  document.getElementById('call-history');
 callHistory.innerText = ""
 
@@ -248,6 +307,15 @@ const data = {
 }
 
 savedData.push(data)
+
+if(coin > 0){
+    alert( '📞 Calling '+data.name+" "+data.phone+'...')
+    coin = coin-20;
+  }
+  else{
+    alert('❌ You don’t have enough coins! At least 20 coins are required to make a call.')
+  }
+   document.getElementById('call-coin').innerText = coin
 
 const callHistory =  document.getElementById('call-history');
 callHistory.innerText = ""
@@ -287,6 +355,15 @@ const data = {
 
 savedData.push(data)
 
+if(coin > 0){
+    alert( '📞 Calling '+data.name+" "+data.phone+'...')
+    coin = coin-20;
+  }
+  else{
+    alert('❌ You don’t have enough coins! At least 20 coins are required to make a call.')
+  }
+   document.getElementById('call-coin').innerText = coin
+
 const callHistory =  document.getElementById('call-history');
 callHistory.innerText = ""
 
@@ -325,6 +402,15 @@ const data = {
 
 savedData.push(data)
 
+if(coin > 0){
+    alert( '📞 Calling '+data.name+" "+data.phone+'...')
+    coin = coin-20;
+  }
+  else{
+    alert('❌ You don’t have enough coins! At least 20 coins are required to make a call.')
+  }
+   document.getElementById('call-coin').innerText = coin
+
 
 const callHistory =  document.getElementById('call-history');
 callHistory.innerText = ""
@@ -353,8 +439,9 @@ document.getElementById('bd-railway')
 .addEventListener('click',function(e){
   e.preventDefault();
 
-  
 
+  
+  
 const data = {
   name: 'Bangladesh Railway Helpline',
   phone: 163,
@@ -362,6 +449,17 @@ const data = {
 }
 
 savedData.push(data)
+
+
+if(coin > 0){
+    alert( '📞 Calling '+data.name+" "+data.phone+'...')
+    coin = coin-20;
+  }
+  else{
+    alert('❌ You don’t have enough coins! At least 20 coins are required to make a call.')
+  }
+   document.getElementById('call-coin').innerText = coin
+ 
 
 const callHistory =  document.getElementById('call-history');
 callHistory.innerText = ""
@@ -377,6 +475,10 @@ for(const data of savedData){
             <p class="roboto-font text-[#5C5C5C] text-[16px] ">${data.date}</p>
            </div>
   `
+
+  
+
+ 
 
   callHistory.appendChild(div)
 }
