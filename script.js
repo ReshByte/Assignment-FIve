@@ -38,11 +38,14 @@ for (const btn of greyButton) {
 
 
 //Clear Button
+const removeDiv = document.getElementById('call-history');
+
 
 document.getElementById('clear-btn')
-.addEventListener('click',function(e){
+.addEventListener('click',function(){
   // e.preventDefault()
-  document.getElementById('call-history').innerText = ""
+    removeDiv.replaceChildren();
+   savedData.length = 0
   
 })
 
@@ -95,6 +98,7 @@ for(const data of savedData){
   `
 
   callHistory.appendChild(div)
+   
 }
 
 })
