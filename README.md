@@ -20,15 +20,13 @@ querySelectorAll: Selects all from ('___') like: #id / .class / tag .It can be i
 
 Answer-2:
 
+Step-1:Create new element
+Step-2:Add content to this createELement
+Step-3:Insert into in DOM
+
 Example:
-
-//Create new element
 const createElement = document.createElement("div");
-
-//add content to this createELement
 createElement.innerText = "Hi This is Reshat!";
-
-//Insert into in DOM
 document.getElementById('div-container').appendChild(createElement);
 
 
@@ -42,7 +40,7 @@ Answer-3:
 
 Event Bubble: Event bubbling is a DOM event propagation mechanism where an event starts at the target element and bubbles up to the root of the document.
 
-How does it work: Parent --> GrandParent --> Document --> Window
+How does it work: Parent --> GrandParent --> Document --> Window. 
 Clicking the child triggers the event to propagate upward, activating listeners on the parent and grandparent. 
 
 
