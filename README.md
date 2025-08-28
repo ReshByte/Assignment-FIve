@@ -26,7 +26,11 @@ Step-3:Insert into in DOM
 
 Example:
 const createElement = document.createElement("div");
+
+
 createElement.innerText = "Hi This is Reshat!";
+
+
 document.getElementById('div-container').appendChild(createElement);
 
 
