@@ -79,6 +79,7 @@ savedData.push(data)
   }
   else{
     alert('❌ You don’t have enough coins! At least 20 coins are required to make a call.')
+    return
   }
    document.getElementById('call-coin').innerText = coin
 
@@ -88,7 +89,7 @@ callHistory.innerText = ""
 for(const data of savedData){
   const div = document.createElement("div")
   div.innerHTML = `
-   <div class="flex justify-between items-center h-[80px] p-[10px] bg-[#FAFAFA] rounded-[8px] mx-[18px] mb-[18px] w-[340px]">
+   <div class="flex justify-between items-center h-[80px] p-[10px] bg-[#FAFAFA] rounded-[8px] mx-[18px] mb-[18px]">
             <div>
                 <h1 class="inter-font font-semibold text-black w-[170px]">${data.name}</h1>
                 <p class="roboto-font text-[16px] text-[#5C5C5C]">${data.phone}</p>
@@ -128,6 +129,7 @@ if(coin > 0){
   }
   else{
     alert('❌ You don’t have enough coins! At least 20 coins are required to make a call.')
+    return  
   }
    document.getElementById('call-coin').innerText = coin
 
@@ -176,6 +178,7 @@ if(coin > 0){
   }
   else{
     alert('❌ You don’t have enough coins! At least 20 coins are required to make a call.')
+    return
   }
    document.getElementById('call-coin').innerText = coin
 
@@ -224,6 +227,7 @@ if(coin > 0){
   }
   else{
     alert('❌ You don’t have enough coins! At least 20 coins are required to make a call.')
+    return
   }
    document.getElementById('call-coin').innerText = coin
 
@@ -271,6 +275,7 @@ if(coin > 0){
   }
   else{
     alert('❌ You don’t have enough coins! At least 20 coins are required to make a call.')
+    return
   }
    document.getElementById('call-coin').innerText = coin
 
@@ -318,6 +323,7 @@ if(coin > 0){
   }
   else{
     alert('❌ You don’t have enough coins! At least 20 coins are required to make a call.')
+    return
   }
    document.getElementById('call-coin').innerText = coin
 
@@ -365,6 +371,7 @@ if(coin > 0){
   }
   else{
     alert('❌ You don’t have enough coins! At least 20 coins are required to make a call.')
+    return
   }
    document.getElementById('call-coin').innerText = coin
 
@@ -412,6 +419,7 @@ if(coin > 0){
   }
   else{
     alert('❌ You don’t have enough coins! At least 20 coins are required to make a call.')
+    return
   }
    document.getElementById('call-coin').innerText = coin
 
@@ -461,6 +469,7 @@ if(coin > 0){
   }
   else{
     alert('❌ You don’t have enough coins! At least 20 coins are required to make a call.')
+    return
   }
    document.getElementById('call-coin').innerText = coin
  
